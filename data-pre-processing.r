@@ -1,3 +1,7 @@
+# Applied Predictive Modeling
+# Chapter 3
+# Data Pre-Processing
+
 # install.packages(c("AppliedPredictiveModeling", "e1071", "caret", "lattice"))
 
 library(AppliedPredictiveModeling)
