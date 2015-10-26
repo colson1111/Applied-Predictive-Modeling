@@ -87,7 +87,6 @@ svmFit <- train(Class ~ .,
                 data = GermanCreditTrain,
                 method = "svmRadial")
 
-
 # pre-process with center and scale.  Test multiple values of cost. Repeated 10 fold CV.
 set.seed(1056)
 svmFit <- train(Class ~ .,
@@ -95,7 +94,7 @@ svmFit <- train(Class ~ .,
                 method = "svmRadial",
                 preProc = c("center", "scale"),
                 tuneLength = 10,
-                trControl = trainControl(method = "repeatedcv", repeats = 5))
+                trControl = trainControl(method = "repeatedcv", repeats = 5, classProbs = TRUE))
 
 # visualize the performance profile
 plot(svmFit, scales = list(x = list(log = 2)))
