@@ -3,6 +3,7 @@
 # Regression Trees and Rule Based Models
 install.packages("caret")
 install.packages(c("Cubist", "gbm", "ipred", "party", "partykit", "randomForest", "rpart", "RWeka"))
+install.packages("AppliedPredictiveModeling")
 
 library(caret)
 library(Cubist)
